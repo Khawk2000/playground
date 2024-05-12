@@ -7,6 +7,9 @@ import fingy from './IndexPointingUp.svg';
 import grab from './RaisedFist.svg';
 import strug from './ConfoundedFace.svg';
 import yo from './WavingHand.svg';
+import swim from './Swimming.JPG';
+import moreswim from './swimcollage.JPG';
+import load from './spinningdots.svg';
 
 
 
@@ -52,7 +55,7 @@ function App() {
               <div className="home-info-container">
                 <h1 className="home-info-name">Full Stack Developer <img className='wave-hand' src={yo} alt='waving hand'/></h1>
                 
-                <h3 className="home-info-description">I'm Keegan Hawkins, recent grad and passionate Software Engineer located in Chicago, IL.</h3>
+                <h3 className="home-info-description">Hi, I'm Keegan Hawkins, recent grad and passionate Software Engineer located in Chicago, IL.</h3>
               </div>
               <div className="home-pic-container">
                 <div className="home-pic">
@@ -78,7 +81,40 @@ function App() {
           </section>
           <div className="separator"></div>
           <section className="about" id='about'>
-            <h1>Next Section</h1>
+            <h1 className='about-title'>About Me</h1>
+            <div className="about-main-container">
+              <div className="about-pic-container">
+                <img className='swim-pic' src={swim} alt='swim'/>
+              </div>
+              <div className="about-text-container">
+                <h1 className='about-text'>Swimming</h1>
+                <p className='swim-text'>I have been a competitve swimmer for 16 years of my life. 
+                It has been a great opportunity for me to learn life skills like...</p>
+                <ul className='swim-skills-list'>
+                  <li className='swim-skill'>How to Swim (obviously)</li>
+                  <li className='swim-skill'>Leadership: Teaching others and encouraging teamwork</li>
+                  <li className='swim-skill'>Time Management: Between school, swim, work, and social life</li>
+                  <li className='swim-skill'>Goal Setting: Important to achieving goals</li>
+                </ul>
+              </div>
+            </div>
+            <div className="warning"><h1>WARNING!!!</h1><h3>Bragging Incoming...</h3></div>
+            <div className="about-achievements-container">
+              <div className="about-text-container">
+                <h1 className='about-text'>Achievements</h1>
+                <p className='swim-achieve-text'>Here's my best accomplishments</p>
+                <ul className='swim-achievement-list'>
+                  <li className='swim-achievement'>2021 US Olympic Trials Qualifier</li>
+                  <li className='swim-achievement'>8-time individual GLIAC Champion</li>
+                  <li className='swim-achievement'>GLIAC Conference Male Swimmer of the Year(2022)</li>
+                  <li className='swim-achievement'>20-time NCAA All-American</li>
+                </ul>
+                <p className='trials-training'>Loading... <img src={load} alt='loading' className='load'/>  2024 US Olympic Trials Qualifier</p>
+              </div>
+              <div className="about-gallery-container">
+                <img className='swim-collage' src={moreswim} alt='swim'/>
+              </div>
+            </div>
           </section>
         </div>
       </div>
