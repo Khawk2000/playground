@@ -15,7 +15,6 @@
 
 .app-try > * {
   position: absolute;
-  
   z-index: -1;
 }
 
@@ -286,8 +285,7 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   overflow-y: scroll;
   animation: dragged-down 3s 7s forwards;
   transform: translateY(-120vh);
@@ -430,4 +428,132 @@ nav ul li {
   border-bottom: 4px solid red;
   color: red;
   transform: scale(1.1);
+}
+
+.home {
+  background: linear-gradient(315deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+  margin-top: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.home-container{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.home-info-container {
+  flex: 60%;
+}
+
+.home-info-name {
+  font-size: 48px;
+}
+
+.wave-hand {
+  height: 50px;
+  width: 50px;
+  animation: wave 2s 1s infinite;
+}
+
+@keyframes wave {
+  0%, 20%, 40%, 60%, 100% {
+    transform: rotate(40deg);
+  }
+  30%, 50%{
+    transform: rotate(-30deg);
+  }
+}
+
+.home-info-description {
+  font-size: 26px;
+}
+
+.home-pic-container {
+  flex: 40%;
+}
+
+.home-pic{
+  background-image: url(face.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 10rem;
+  width: 10rem;
+  border: 3px solid #242424;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transform: scale(1.5);
+  transition: all 1s ease-in-out;
+  animation: pic-outline 8s ease-in-out infinite;
+}
+
+@keyframes pic-outline {
+  0%{
+    border-radius: 30% 70% 20% 40% / 70% 30% 60% 40%;
+  }
+  50%{
+    border-radius: 60% 30% 20% 50% / 50% 40% 70% 80%;
+  }
+  100% {
+    border-radius: 30% 70% 20% 40% / 70% 30% 60% 40%;
+  }
+}
+
+.skills{
+  align-items: center;
+  padding: 10rem 0 5rem 0;
+  bottom: 0;
+  color: #242424;
+  display: flex;
+  font-size: 1.7rem;
+  left: 0;
+}
+
+.skills-title{
+  border-right: 4px solid #8e8e8e;
+  border-radius: 2px;
+  color: #242424;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-right: 7rem;
+  padding-right: 2rem;
+}
+
+.logos li {
+  list-style: none;
+  transition: all 0.3s ease-out;
+}
+
+.logos li:hover {
+  transform: scale(1.1);
+}
+
+.logos ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.about {
+  background: linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.separator{
+  width: 100%;
+  height: 3px;
+  background-color: #242424;
+  border-bottom: 10px solid #242424;
 }

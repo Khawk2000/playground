@@ -6,7 +6,7 @@ import grim from './GrimacingFace.svg';
 import fingy from './IndexPointingUp.svg';
 import grab from './RaisedFist.svg';
 import strug from './ConfoundedFace.svg';
-
+import yo from './WavingHand.svg';
 
 
 
@@ -47,8 +47,38 @@ function App() {
               </li>
             </ul>
           </nav>
-          <section>
-
+          <section className='home' id='home'>
+            <div className="home-container">
+              <div className="home-info-container">
+                <h1 className="home-info-name">Full Stack Developer <img className='wave-hand' src={yo} alt='waving hand'/></h1>
+                
+                <h3 className="home-info-description">I'm Keegan Hawkins, recent grad and passionate Software Engineer located in Chicago, IL.</h3>
+              </div>
+              <div className="home-pic-container">
+                <div className="home-pic">
+                </div>
+              </div>
+              
+            </div>
+            <div className="skills">
+                <h3 className='skills-title'>Tech Stack</h3>
+                <div className="logos">
+                  <ul>
+                    <div>
+                    <li><img src='https://skillicons.dev/icons?i=js,html,css' alt='jshtmlcss'/></li>
+                    <li><img src='https://skillicons.dev/icons?i=mongodb,express,react,nodejs' alt='Mernstack'/></li>
+                    </div>
+                    <div>
+                    <li><img src='https://skillicons.dev/icons?i=cs,dotnet' alt='microsoftstack'/></li>
+                    <li><img src='https://skillicons.dev/icons?i=py,java,c' alt='otherlanguages'/></li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+          </section>
+          <div className="separator"></div>
+          <section className="about" id='about'>
+            <h1>Next Section</h1>
           </section>
         </div>
       </div>
