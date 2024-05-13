@@ -10,6 +10,8 @@ import yo from './WavingHand.svg';
 import swim from './Swimming.JPG';
 import moreswim from './swimcollage.JPG';
 import load from './spinningdots.svg';
+import mf from './MF_Logo_Banner.png';
+import oldpft from './oldport.png';
 
 
 
@@ -54,14 +56,12 @@ function App() {
             <div className="home-container">
               <div className="home-info-container">
                 <h1 className="home-info-name">Full Stack Developer <img className='wave-hand' src={yo} alt='waving hand'/></h1>
-                
                 <h3 className="home-info-description">Hi, I'm Keegan Hawkins, recent grad and passionate Software Engineer located in Chicago, IL.</h3>
               </div>
               <div className="home-pic-container">
                 <div className="home-pic">
                 </div>
               </div>
-              
             </div>
             <div className="skills">
                 <h3 className='skills-title'>Tech Stack</h3>
@@ -116,6 +116,84 @@ function App() {
               </div>
             </div>
           </section>
+          <div className="separator"></div>
+          <section className="projects" id='projects'>
+            <h1 className='projects-title'>My Projects</h1>
+            <div className="projects-container">
+              <div className="project-row">
+                <div className="project-box">
+                  <a className='project-link' href='https://www.mentalfortitudellc.com'>
+                    <figure className="project-pic-wrap" data-category='Full-Stack'>
+                      <img src={mf} alt='mf' className='project-img'/>
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">Mental Fortitude Workout Buddy</h4>
+                    </div>
+                  </a>
+                </div>
+                <div className="project-box">
+                  <a className='project-link' href='#projects'>
+                    <figure className="project-pic-wrap" data-category='Full-Stack'>
+                      <img src={mf} alt='mf' className='project-img'/>
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">MF Nutrition Tracker: Coming soon...</h4>
+                    </div>
+                  </a>
+                </div>
+                <div className="project-box">
+                  <a className='project-link' href='https://khpft.onrender.com'>
+                    <figure className="project-pic-wrap" data-category='Full-Stack'>
+                      <img src={oldpft} alt='oldpft' className='project-img'/>
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">Old Portfolio site</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div className="separator"></div>
+          <section className="contact" id='contact'>
+            <h1 className="contact-title">Contact Me</h1>
+            <div className="contact-container">
+              <form action='mailto:keeganmhawkins@gmail.com'>
+                <div className='form-row'>
+                  <label for='fname'>First Name</label>
+                  <input type='text' id='fname' name='firstname' placeholder='Your name...' required/>
+                </div>
+                <div className='form-row'>
+                  <label for='lname'>Last Name</label>
+                  <input type='text' id='lname' name='lastname' placeholder='Your last name...' required/>
+                </div>
+                <div className='form-row'>
+                  <label for='email'>Email</label>
+                  <input type='text' id='fname' name='firstname' placeholder='Email...' required/>
+                </div>
+                <div className='form-row'>
+                  <label>Message...</label>
+                  <textarea required></textarea>
+                </div>
+                <div className="button-container">
+                  <button className='glow-on-hover' type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <div className="footer-container">
+            <div className="footer-links">
+              <div className="footer-link-wrapper">
+                <h2 className="social-title">Social Links</h2>
+                <div className="footer-link-items">
+                  <a className='social-link' href='https://www.linkedin.com/in/keegan-hawkins-26b5121ba/'><img src='https://skillicons.dev/icons?i=linkedin' alt='linkedin'/></a>
+                  <a className='social-link' href='https://www.instagram.com/keegan__hawkins/'><img src='https://skillicons.dev/icons?i=instagram' alt='instagram'/></a>
+                  <a className='social-link' href='https://www.github.com/Khawk2000'><img src='https://skillicons.dev/icons?i=github' alt='github'/></a>
+                  <a className='social-link' href='https://codepen.io/Keegan-Hawkins'><img src='https://skillicons.dev/icons?i=codepen' alt='codepen'/></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
