@@ -55,7 +55,7 @@ function App() {
           <section className='home' id='home'>
             <div className="home-container">
               <div className="home-info-container">
-                <h1 className="home-info-name">Full Stack Developer <img className='wave-hand' src={yo} alt='waving hand'/></h1>
+                <h1 className="home-info-name">Software Engineer <img className='wave-hand' src={yo} alt='waving hand'/></h1>
                 <h3 className="home-info-description">Hi, I'm Keegan Hawkins, recent grad and passionate Software Engineer located in Chicago, IL.</h3>
               </div>
               <div className="home-pic-container">
