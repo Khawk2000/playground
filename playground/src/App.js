@@ -12,6 +12,7 @@ import moreswim from './swimcollage.JPG';
 import load from './spinningdots.svg';
 import mf from './MF_Logo_Banner.png';
 import oldpft from './oldport.png';
+import fascar from './fascar.png';
 
 
 
@@ -148,6 +149,16 @@ function App() {
                     </figure>
                     <div className="project-info">
                       <h4 className="project-text">Old Portfolio site</h4>
+                    </div>
+                  </a>
+                </div>
+                <div className="project-box">
+                  <a className='project-link' href='https://fascar.onrender.com'>
+                    <figure className="project-pic-wrap" data-category='Full-Stack'>
+                      <img src={fascar} alt='fascar' className='project-img'/>
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">Fascar Car Rentals</h4>
                     </div>
                   </a>
                 </div>
