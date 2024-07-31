@@ -14,6 +14,7 @@ import mf from "./MF_Logo_Banner.png";
 import oldpft from "./oldport.png";
 import fascar from "./fascar.png";
 import NET from "./netapp.png";
+import ProjMan from "./ProjMan.png";
 
 //FIX ALL SECTIONS TO BE RESPONSIVE
 
@@ -256,6 +257,28 @@ function App() {
                     <div className="project-info">
                       <h4 className="project-text">
                         Global Natural Event Tracker
+                      </h4>
+                    </div>
+                  </a>
+                </div>
+                <div className="project-box">
+                  <a
+                    className="project-link"
+                    href="https://projman.onrender.com"
+                  >
+                    <figure
+                      className="project-pic-wrap"
+                      data-category="Full-Stack"
+                    >
+                      <img
+                        src={ProjMan}
+                        alt="ProjMan"
+                        className="project-img"
+                      />
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">
+                        ProjMan: Project Management Application
                       </h4>
                     </div>
                   </a>
