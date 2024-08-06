@@ -15,6 +15,7 @@ import oldpft from "./oldport.png";
 import fascar from "./fascar.png";
 import NET from "./netapp.png";
 import ProjMan from "./ProjMan.png";
+import ExpenseTracker from "./ExpenseTracker.png";
 
 //FIX ALL SECTIONS TO BE RESPONSIVE
 
@@ -279,6 +280,28 @@ function App() {
                     <div className="project-info">
                       <h4 className="project-text">
                         ProjMan: Project Management Application
+                      </h4>
+                    </div>
+                  </a>
+                </div>
+                <div className="project-box">
+                  <a
+                    className="project-link"
+                    href="https://expense-tracker-eight-bice.vercel.app"
+                  >
+                    <figure
+                      className="project-pic-wrap"
+                      data-category="Full-Stack"
+                    >
+                      <img
+                        src={ExpenseTracker}
+                        alt="Expense Tracker"
+                        className="project-img"
+                      />
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">
+                        Simple Expense Tracker App
                       </h4>
                     </div>
                   </a>
