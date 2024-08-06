@@ -278,9 +278,7 @@ function App() {
                       />
                     </figure>
                     <div className="project-info">
-                      <h4 className="project-text">
-                        ProjMan: Project Management Application
-                      </h4>
+                      <h4 className="project-text">ProjMan: Management App</h4>
                     </div>
                   </a>
                 </div>
