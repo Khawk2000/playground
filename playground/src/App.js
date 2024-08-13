@@ -16,6 +16,7 @@ import fascar from "./fascar.png";
 import NET from "./netapp.png";
 import ProjMan from "./ProjMan.png";
 import ExpenseTracker from "./ExpenseTracker.png";
+import writings from "./writings-dev.png";
 
 //FIX ALL SECTIONS TO BE RESPONSIVE
 
@@ -300,6 +301,28 @@ function App() {
                     <div className="project-info">
                       <h4 className="project-text">
                         Simple Expense Tracker App
+                      </h4>
+                    </div>
+                  </a>
+                </div>
+                <div className="project-box">
+                  <a
+                    className="project-link"
+                    href="https://writings-dev.onrender.com"
+                  >
+                    <figure
+                      className="project-pic-wrap"
+                      data-category="Full-Stack"
+                    >
+                      <img
+                        src={writings}
+                        alt="Simple Blog"
+                        className="project-img"
+                      />
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">
+                        Writings.dev - Simple Static Web Page
                       </h4>
                     </div>
                   </a>
