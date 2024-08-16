@@ -17,6 +17,7 @@ import NET from "./netapp.png";
 import ProjMan from "./ProjMan.png";
 import ExpenseTracker from "./ExpenseTracker.png";
 import writings from "./writings-dev.png";
+import gs from "./githubsearch.png";
 
 //FIX ALL SECTIONS TO BE RESPONSIVE
 
@@ -323,6 +324,28 @@ function App() {
                     <div className="project-info">
                       <h4 className="project-text">
                         Writings.dev - Simple Static Web Page
+                      </h4>
+                    </div>
+                  </a>
+                </div>
+                <div className="project-box">
+                  <a
+                    className="project-link"
+                    href="https://github-search-app-evm1.onrender.com"
+                  >
+                    <figure
+                      className="project-pic-wrap"
+                      data-category="Full-Stack"
+                    >
+                      <img
+                        src={gs}
+                        alt="GitHub Search App"
+                        className="project-img"
+                      />
+                    </figure>
+                    <div className="project-info">
+                      <h4 className="project-text">
+                        GitHub Profile Search App
                       </h4>
                     </div>
                   </a>
