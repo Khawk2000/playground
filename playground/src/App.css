@@ -1,15 +1,17 @@
 * {
-  scrollbar-color: #8e8e8e, #fff;
+  scrollbar-color: #fff, #2a2a2a;
   scrollbar-width: thin;
   box-sizing: border-box;
   margin: 0;
   font-family: Poppins, sans-serif;
   font-weight: 600;
+
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 
 .App{
   height: 100vh;
@@ -21,6 +23,10 @@ html {
 .app-try > * {
   position: absolute;
   z-index: -1;
+}
+
+li::marker {
+  color: white;
 }
 
 .left-hand-zoom {
@@ -325,7 +331,7 @@ html {
 
 nav {
   align-items: center;
-  background: #242424;
+  background: #1a1a1a;
   box-shadow: 0 0 10px rgba(0,0,0,0.09);
   display: flex;
   font-size: 1.7rem;
@@ -340,7 +346,11 @@ nav {
 }
 
 .nav-title {
-  color: #fff;
+  background: #43cea2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%);
+  background: linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 
@@ -367,12 +377,16 @@ nav ul li a {
   scroll-behavior: smooth;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 .home-link{
   color: #fff;
   font-weight: 600;
   text-decoration: none;
   height: 100%;
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding: 0.5rem 0.5rem;
   border-bottom: 4px solid transparent; 
@@ -381,67 +395,128 @@ nav ul li a {
 
 .home-link:hover{
   transition: all 0.3s ease-in-out;
-  border-bottom: 4px solid hotpink;
-  color: hotpink;
+  background: -webkit-linear-gradient(315deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1.1);
 }
 
+.home-link::after{
+  display: block;
+  content: "";
+  margin:auto;
+  width: 0;
+  height: 4px;
+  transition: width 0.3s;
+}
+
+.home-link:hover::after {
+  width: 100%;
+  background: -webkit-linear-gradient(315deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+}
 .about-link{
   color: #fff;
   font-weight: 600;
   text-decoration: none;
   height: 100%;
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding: 0.5rem 0.5rem;
   border-bottom: 4px solid transparent; 
+  transition: all 0.5s ease-out;
 }
 
 .about-link:hover{
   transition: all 0.3s ease-in-out;
-  border-bottom: 4px solid blue;
-  color: blue;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1.1);
 }
 
+.about-link::after{
+  display: block;
+  content: "";
+  margin:auto;
+  width: 0;
+  height: 4px;
+  transition: width 0.3s;
+}
+
+.about-link:hover::after {
+  width: 100%;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
 .projects-link{
   color: #fff;
   font-weight: 600;
   text-decoration: none;
   height: 100%;
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding: 0.5rem 0.5rem;
   border-bottom: 4px solid transparent; 
+  transition: all 0.5s ease-out;
 }
 
 .projects-link:hover{
   transition: all 0.3s ease-in-out;
-  border-bottom: 4px solid yellow;
-  color: yellow;
+  background: -webkit-linear-gradient(315deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1.1);
 }
 
+.projects-link::after{
+  display: block;
+  content: "";
+  margin:auto;
+  width: 0;
+  height: 4px;
+  transition: width 0.3s;
+}
+
+.projects-link:hover::after {
+  width: 100%;
+  background: -webkit-linear-gradient(315deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+}
 .contact-link{
   color: #fff;
   font-weight: 600;
   text-decoration: none;
   height: 100%;
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding: 0.5rem 0.5rem;
   border-bottom: 4px solid transparent; 
+  transition: all 0.5s ease-out;
 }
 
 .contact-link:hover{
   transition: all 0.3s ease-in-out;
-  border-bottom: 4px solid red;
-  color: red;
+  background: -webkit-linear-gradient(135deg, hsla(356, 76%, 50%, 1) 0%, rgb(73, 73, 73) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1.1);
 }
 
+.contact-link::after{
+  display: block;
+  content: "";
+  margin:auto;
+  width: 0;
+  height: 4px;
+  transition: width 0.3s;
+}
+
+.contact-link:hover::after {
+  width: 100%;
+  background: -webkit-linear-gradient(135deg, hsla(356, 76%, 50%, 1) 0%, rgb(73, 73, 73) 100%);
+}
+
+
 .home {
-  background: linear-gradient(315deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+  background: #2a2a2a;
   margin-top: 110px;
   width: 100%;
   display: flex;
@@ -466,6 +541,11 @@ nav ul li a {
 
 .home-info-name {
   font-size: 3rem;
+  background: #43cea2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%);
+  background: linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .wave-hand {
@@ -485,8 +565,11 @@ nav ul li a {
 
 .home-info-description {
   font-size: 1.6rem;
-  color: #3c3c3c;
+  background: -webkit-linear-gradient(315deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .home-pic-container {
   flex: 40%;
@@ -498,11 +581,11 @@ nav ul li a {
   background-repeat: no-repeat;
   height: 11rem;
   width: 11rem;
-  border: 3px solid #242424;
+  border: 3px solid blanchedalmond;
   border-radius:  50% 50% 30% 70% / 50% 70% 30% 50%;
   transform: scale(1.5);
   transition: all 1s ease-in-out;
-  animation: pic-outline 5s ease-in-out infinite;
+  animation: pic-outline 6s ease-in-out infinite;
 }
 
 @keyframes pic-outline {
@@ -543,13 +626,20 @@ nav ul li a {
 }
 
 .skills-title{
-  border-right: 4px solid #8e8e8e;
+  border-right: 4px solid transparent;
+  border-image: linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%);
+  border-image-slice: 1;
   border-radius: 2px;
   color: #242424;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin-right: 5rem;
   padding-right: 1rem;
+  background: #43cea2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%);
+  background: linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logos li {
@@ -570,13 +660,13 @@ nav ul li a {
 .separator{
   width: 100%;
   height: 3px;
-  background-color: #242424;
-  border-bottom: 10px solid #242424;
+  background-color: #151515;
+  border-bottom: 10px solid #151515;
 }
 
 
 .about {
-  background: linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: #2a2a2a;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -589,6 +679,9 @@ nav ul li a {
 .about-title{
   font-size: 3.5rem;
   text-decoration: underline;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-main-container {
@@ -616,7 +709,9 @@ nav ul li a {
   width: 30rem;
   border-radius: 10px;
   transition: all 0.2s ease-out;
-  border: 5px solid #242424;
+  border: 5px solid transparent;
+  border-image: linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  border-image-slice: 1;
 }
 
 .swim-pic:hover, .swim-collage:hover{
@@ -626,17 +721,26 @@ nav ul li a {
 .about-text {
   font-size: 2.5rem;
   padding-bottom: 2rem;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .swim-text {
   font-size: 1.5rem;
   padding-bottom: 1rem;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .swim-skill {
   font-size: 1.2rem;
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .swim-skill:hover {
@@ -673,6 +777,9 @@ nav ul li a {
 .warning h3 {
   padding-top: 2rem;
   font-size: 2rem;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-achievements-container {
@@ -688,16 +795,25 @@ nav ul li a {
 .swim-achieve-text {
   font-size: 1.8rem;
   padding-bottom: 2rem;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .swim-achievement-list{
   padding-bottom: 3rem;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .swim-achievement{
   font-size: 1.5rem;
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .swim-achievement:hover{
@@ -720,6 +836,9 @@ nav ul li a {
 
 .trials-training {
   font-size: 1.5rem;
+  background: -webkit-linear-gradient(135deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .load {
@@ -727,10 +846,11 @@ nav ul li a {
   height: 3rem;
   width: 3rem;
   padding-right: 1rem;
+  color: blue;
 }
 
 .projects {
-  background: linear-gradient(315deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  background: #2a2a2a;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -743,6 +863,9 @@ nav ul li a {
 .projects-title {
   font-size: 3.5rem;
   text-decoration: underline;
+  background: -webkit-linear-gradient(315deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .projects-container{
@@ -796,7 +919,7 @@ nav ul li a {
 
 .project-box{
   width: 100%;
-  height: 100%;
+  height: 400px;
   padding: 0 1rem;
   border-radius: 10px;
   padding-bottom: 50px;
@@ -806,12 +929,14 @@ nav ul li a {
   display: flex;
   flex-flow: column;
   width: 100%;
+  height: 100%;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  
 }
 
 .project-pic-wrap{
@@ -856,18 +981,23 @@ nav ul li a {
 
 .project-info{
   min-height: 5rem;
+  height: 100%;
   padding: 1rem 3rem;
   background-color: #242424;
+
 }
 
 .project-text {
   color: white;
   font-size: 1.3rem;
   line-height: 24px;
+  background: -webkit-linear-gradient(315deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact {
-  background: linear-gradient(135deg, hsla(356, 76%, 50%, 1) 0%, hsla(12, 17%, 17%, 1) 100%);
+  background: #2a2a2a;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -880,6 +1010,9 @@ nav ul li a {
 .contact-title{
   font-size: 3.5rem;
   text-decoration: underline;
+  background: -webkit-linear-gradient(135deg, hsla(356, 76%, 50%, 1) 0%, rgb(121, 28, 4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-container {
@@ -887,7 +1020,7 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   width: 40%;
-  background-color: #242424;
+  background-color: #202020;
   border-radius: 5px;
   padding-bottom: 3rem;
   padding-top: 3rem;
@@ -904,7 +1037,9 @@ form {
 }
 
 label {
-  color: white;
+  background: -webkit-linear-gradient(135deg, hsla(356, 76%, 50%, 1) 0%, rgb(121, 28, 4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 input[type=text], select, textarea{
