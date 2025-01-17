@@ -366,6 +366,51 @@ nav ul li {
   padding: 1% 1.5%;
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fcfcfc;
+  font-size: calc(16px + (36 - 16) * (100vw - 360px) / (2560 - 360));
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1a1a1a;
+    padding: 1rem 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.09);
+  }
+
+  nav ul li {
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    font-size: calc(16px + (36 - 16) * (100vw - 360px) / (2560 - 360));
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: calc(20px + (36 - 20) * (700px - 360px) / (2560 - 360));
+  }
+}
+
+
+
 
 @keyframes color-text-fill {
   0%{

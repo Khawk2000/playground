@@ -18,10 +18,17 @@ import ProjMan from "./ProjMan.png";
 import ExpenseTracker from "./ExpenseTracker.png";
 import writings from "./writings-dev.png";
 import gs from "./githubsearch.png";
+import React, { useState } from "react";
 
 //FIX ALL SECTIONS TO BE RESPONSIVE
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <div className="App">
@@ -42,24 +49,39 @@ function App() {
         <div className="drag-down">
           <nav>
             <h2 className="nav-title">Keegan Hawkins</h2>
-            <ul>
+            <button
+              className="nav-toggle"
+              aria-label="toggle navigation"
+              onClick={toggleMenu}
+            >
+              ☰
+            </button>
+            <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
               <li>
-                <a href="#home" className="home-link">
+                <a href="#home" className="home-link" onClick={toggleMenu}>
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="about-link">
+                <a href="#about" className="about-link" onClick={toggleMenu}>
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="projects-link">
+                <a
+                  href="#projects"
+                  className="projects-link"
+                  onClick={toggleMenu}
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="contact-link">
+                <a
+                  href="#contact"
+                  className="contact-link"
+                  onClick={toggleMenu}
+                >
                   Contact
                 </a>
               </li>
