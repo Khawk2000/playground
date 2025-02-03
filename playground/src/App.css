@@ -590,7 +590,6 @@ a, a:hover {
   gap: 20%;
   padding: 5%;
   border-radius: 10px;
-  background-color: blue;
 }
 
 .home-info-container {
@@ -598,7 +597,7 @@ a, a:hover {
 }
 
 .home-info-name {
-  font-size: calc(45px + (45 - 20) * (100vw - 360px) / (2560 - 360));
+  font-size: calc(20px + (70 - 20) * (100vw - 360px) / (2560 - 360));
   background: #43cea2;  /* fallback for old browsers */
   background: -webkit-linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%);
   background: linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -607,8 +606,8 @@ a, a:hover {
 }
 
 .wave-hand {
-  width: calc(36px + (36 - 18) * (100vw - 360px) / (2560 - 360));
-  height: calc(36px + (36 - 18) * (100vw - 360px) / (2560 - 360));
+  width: calc(18px + (60 - 18) * (100vw - 360px) / (2560 - 360));
+  height: calc(18px + (60 - 18) * (100vw - 360px) / (2560 - 360));
   animation: wave 2s 1s infinite;
 }
 
@@ -622,7 +621,7 @@ a, a:hover {
 }
 
 .home-info-description {
-  font-size: calc(30px + (30 - 12) * (100vw - 360px) / (2560 - 360));
+  font-size: calc(12px + (48 - 12) * (100vw - 360px) / (2560 - 360));
   background: -webkit-linear-gradient(315deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -631,15 +630,17 @@ a, a:hover {
 
 .home-pic-container {
   flex: 40%;
+  height: calc(150px + (150 - 50) * (100vw - 360px) / (2560 - 360));
+  width: calc(150px + (150 - 50) * (100vw - 360px) / (2560 - 360)); 
 }
 
 .home-pic{
   background-image: url(face.png);
   background-position: center;
   background-repeat: no-repeat;
-  height: 11rem;
-  width: 11rem;
-  border: 3px solid blanchedalmond;
+  height: calc(150px + (150 - 12) * (100vw - 360px) / (2560 - 360));
+  width: calc(150px + (150 - 12) * (100vw - 360px) / (2560 - 360)); 
+  border: 3px solid rgb(213, 115, 226);
   border-radius:  50% 50% 30% 70% / 50% 70% 30% 50%;
   transform: scale(1.5);
   transition: all 1s ease-in-out;
@@ -675,12 +676,15 @@ a, a:hover {
 
 .skills{
   align-items: center;
-  padding: 15rem 0 3rem 0;
+  padding: 10rem 0 3rem 0;
   bottom: 0;
   color: #242424;
   display: flex;
-  font-size: 1.7rem;
+  font-size: calc(10px + (50 - 10) * (100vw - 360px) / (2560 - 360));
   left: 0;
+  width: 80%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .skills-title{
@@ -691,8 +695,8 @@ a, a:hover {
   color: #242424;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  margin-right: 5rem;
-  padding-right: 1rem;
+  margin-right: calc(10px + (50 - 10) * (100vw - 360px) / (2560 - 360));
+  padding-right: calc(10px + (50 - 10) * (100vw - 360px) / (2560 - 360));
   background: #43cea2;  /* fallback for old browsers */
   background: -webkit-linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%);
   background: linear-gradient(315deg, hsl(210, 73%, 35%, 1) 0%, hsl(161, 59%, 54%, 1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -703,6 +707,21 @@ a, a:hover {
 .logos li {
   list-style: none;
   transition: all 0.3s ease-out;
+  
+}
+
+.three{
+  height: calc(50px + (50 - 20) * (100vw - 360px) / (2560 - 360));
+  width: calc(80px + (120 - 10) * (100vw - 360px) / (2560 - 360));
+}
+
+.two{
+  height: calc(50px + (50 - 20) * (100vw - 360px) / (2560 - 360));
+  width: calc(50px + (90 - 10) * (100vw - 360px) / (2560 - 360));
+}
+.four{
+  height: calc(50px + (50 - 20) * (100vw - 360px) / (2560 - 360));
+  width: calc(110px + (170 - 10) * (100vw - 360px) / (2560 - 360));
 }
 
 .logos li:hover {
@@ -712,7 +731,7 @@ a, a:hover {
 .logos ul {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: calc(20px + (80 - 20) * (100vw - 360px) / (2560 - 360));
 }
 
 .separator{

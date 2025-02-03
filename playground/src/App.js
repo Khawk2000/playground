@@ -113,12 +113,14 @@ function App() {
                         <img
                           src="https://skillicons.dev/icons?i=js,html,css"
                           alt="jshtmlcss"
+                          className="three"
                         />
                       </li>
                       <li>
                         <img
                           src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs"
                           alt="Mernstack"
+                          className="four"
                         />
                       </li>
                     </div>
@@ -127,12 +129,14 @@ function App() {
                         <img
                           src="https://skillicons.dev/icons?i=cs,dotnet"
                           alt="microsoftstack"
+                          className="two"
                         />
                       </li>
                       <li>
                         <img
                           src="https://skillicons.dev/icons?i=py,java,c"
                           alt="otherlanguages"
+                          className="three"
                         />
                       </li>
                     </div>
